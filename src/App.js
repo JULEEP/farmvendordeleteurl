@@ -7,7 +7,7 @@ function App() {
   return (
     <Routes>
       <Route path="/delete-account" element={<DeleteAccount />} />
-      <Route path="/confirm-delete-account/:token" element={<ConfirmDeleteAccount />} />
+      <Route path="/confirm-delete-vendor/:token" element={<ConfirmDeleteAccount />} />
     </Routes>
   );
 }

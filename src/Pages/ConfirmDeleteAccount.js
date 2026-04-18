@@ -13,7 +13,7 @@ const ConfirmDeleteAccount = () => {
       setLoading(true);
       try {
         const response = await axios.get(
-          `https://farmhousebaceknd.onrender.com/api/auth/confirm-delete-account/${token}`
+          `http://localhost:5124/api/vendor/confirm-delete-vendor/${token}`
         );
 
        if (response.status === 200) {

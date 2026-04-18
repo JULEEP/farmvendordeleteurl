@@ -13,7 +13,7 @@ const DeleteAccount = () => {
 
     try {
       const response = await axios.post(
-        'https://farmhousebaceknd.onrender.com/api/auth/deleteaccount',
+        'http://localhost:5124/api/vendor/delete-vendor-account',
         { email, reason }
       );
       setMessage(response.data.message);
@@ -30,7 +30,7 @@ const DeleteAccount = () => {
         {/* 🔝 Added section */}
         <div className="mb-6">
           <p className="text-lg font-bold text-gray-800">
-            Delete your VFARMS account
+            Delete your VFARMS Owner account
           </p>
         </div>
 
