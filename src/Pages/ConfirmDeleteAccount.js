@@ -13,7 +13,7 @@ const ConfirmDeleteAccount = () => {
       setLoading(true);
       try {
         const response = await axios.get(
-          `http://localhost:5124/api/vendor/confirm-delete-vendor/${token}`
+          `https://farmbacknew.onrender.com/api/vendor/confirm-delete-vendor/${token}`
         );
 
        if (response.status === 200) {

@@ -13,7 +13,7 @@ const DeleteAccount = () => {
 
     try {
       const response = await axios.post(
-        'http://localhost:5124/api/vendor/delete-vendor-account',
+        'https://farmbacknew.onrender.com/api/vendor/delete-vendor-account',
         { email, reason }
       );
       setMessage(response.data.message);
